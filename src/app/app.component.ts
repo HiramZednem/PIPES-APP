@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   nombre: string = 'hirAm MenDeZ';
 
+  gogo: string = 'BroDely ToVAR';
+  profesionGogo: string = 'Mampo profesional';
+  biografia: string = 'Este viejo cachondo hijo de puta coje como un toro ¡Sin usar pastillas!';
+
   mostrarNombre() {
     console.log(this.nombre);
   }
