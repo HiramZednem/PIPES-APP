@@ -1,25 +1,4 @@
 
 
 
-
-
-<h1>{{ nombre  | titlecase }}</h1>
-
-<button pButton
-        icon="pi pi-bell"
-        iconPos="right"
-        class="p-button-help"
-        (click)="mostrarNombre()"
-        label="{{'Cambiar nombre' | titlecase }}">
-</button>
-
-<p-card [header]="gogo | titlecase" [subheader]="profesionGogo" [style]="{ width: '360px' }">
-  <ng-template pTemplate="header">
-    <img alt="Card" src="https://scontent.ftgz3-1.fna.fbcdn.net/v/t39.30808-6/275007137_3212345342334653_754955576589153593_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=0SPB3djFx6YAX_DQO9s&_nc_ht=scontent.ftgz3-1.fna&oh=00_AfDEe2hHMOJ9vYRftUSbDARCqZNX40wx1kGSxZA3gbN7xw&oe=6439E347" />
-  </ng-template>
-  <p>{{biografia}}</p>
-  <ng-template pTemplate="footer">
-    <p-button label="Llamar" icon="pi pi-phone"></p-button>
-    <p-button label="Agendar Cita" icon="pi pi-bookmark-fill" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
-  </ng-template>
-</p-card>
+<app-menu />
