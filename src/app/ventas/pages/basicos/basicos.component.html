@@ -46,6 +46,15 @@
           <li>fecha | date:'long'}</li>
           <li>fecha custom</li>
         </ul>
+
+        <hr>
+
+        <ul>
+          <li>fecha | date:'long':'GMT-5'</li>
+          <li>fecha | date:'long':'GMT-2'</li>
+          <li>fecha | date:'long':'GMT-2':'fr'</li>
+        </ul>
+
       </p-card>
     </div>
     <div class="col-6">
@@ -57,6 +66,15 @@
           <li>{{ fecha | date:'long'}}</li>
           <li>{{ fecha | date:'dd/MM/y'}}</li>
         </ul>
+
+        <hr>
+
+        <ul>
+          <li>{{ fecha | date:'long':'GMT-5' }}</li>
+          <li>{{ fecha | date:'long':'GMT-2' }}</li>
+          <li>{{ fecha | date:'long':'GMT-2':'fr' }}</li>
+        </ul>
+
       </p-card>
     </div>
   </div>
