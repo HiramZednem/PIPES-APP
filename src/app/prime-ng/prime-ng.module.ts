@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 //NOTA: Es buena practica si se tienen varias importaciones de una misma libreria, ordenarlos de manera alfabetica
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { FieldsetModule } from 'primeng/fieldset';
 import { MenubarModule } from 'primeng/menubar';
 
 
@@ -11,7 +12,8 @@ import { MenubarModule } from 'primeng/menubar';
   exports: [
     ButtonModule,
     CardModule,
-    MenubarModule
+    MenubarModule,
+    FieldsetModule
   ]
 })
 export class PrimeNgModule { }

@@ -1,18 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  nombre: string = 'hirAm MenDeZ';
+export class AppComponent implements OnInit{
+  constructor( private primeNGConfig: PrimeNGConfig) {
+  }
 
-  gogo: string = 'BroDely ToVAR';
-  profesionGogo: string = 'Mampo profesional';
-  biografia: string = 'Este viejo cachondo hijo de puta coje como un toro ¡Sin usar pastillas!';
-
-  mostrarNombre() {
-    console.log(this.nombre);
+  ngOnInit(): void {
+    this.primeNGConfig.ripple = true;
   }
 }
