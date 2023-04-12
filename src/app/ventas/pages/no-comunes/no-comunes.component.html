@@ -7,7 +7,7 @@
 
 <div class="grid">
 
-  <div class="col md-6">
+  <div class="col-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
       <p>
         Saludos {{ nombreActual }}, es un placer
@@ -24,7 +24,7 @@
     </p-fieldset>
   </div>
 
-  <div class="col md-6">
+  <div class="col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
       <p>
         Actualmente {{ clientes.length | i18nPlural:clientesMapa }}
@@ -38,5 +38,50 @@
     </p-fieldset>
   </div>
 
+  <div class="col-6">
+    <p-fieldset legend="Slice Pipe" [toggleable]="true">
+      <b>Original</b>
+      <pre>{{ clientes }}</pre>
+
+      <b>slice:0:2</b>
+      <pre>{{ clientes | slice:0:2 }}</pre>
+
+      <b>slice:1:2</b>
+      <pre>{{ clientes | slice:1:2 }}</pre>
+
+      <b>slice:1:3</b>
+      <pre>{{ clientes | slice:1:3 }}</pre>
+
+      <b>slice3:3</b>
+      <pre>{{ clientes | slice:3:3 }}</pre>
+
+      <i>Notese que excluye la posicion final del arreglo cuando ponemos slice:3:3 incluye al 3 pero como el final es excluyente
+      lo quita</i>
+    </p-fieldset>
+  </div>
+
+  <div class="col-6">
+    <p-fieldset legend="Json Pipe" [toggleable]="true">
+      <pre>{{ heroes | json }}</pre>
+    </p-fieldset>
+  </div>
+
+
+  <div class="col-6">
+    <!-- sirve para mostrar objetos por propiedad y valor -->
+    <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+      <ul>
+        <li *ngFor="let item of persona | keyvalue">
+          <b>{{item.key | titlecase}}</b>: {{item.value}}
+        </li>
+      </ul>
+    </p-fieldset>
+  </div>
+
+  <div class="col-6">
+    <p-fieldset legend="Async Pipe" [toggleable]="true">
+      <pre>{{miObservable | async}}</pre>
+    </p-fieldset>
+  </div>
 
 </div>

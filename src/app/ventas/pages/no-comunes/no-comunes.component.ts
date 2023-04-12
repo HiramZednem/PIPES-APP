@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { persona } from '../../interfaces/persona.interface';
+import { interval } from 'rxjs';
+import { resolve } from '@angular/compiler-cli';
 
 @Component({
   selector: 'app-no-comunes',
@@ -44,4 +46,34 @@ export class NoComunesComponent {
   borrarCliente(): void {
     this.clientes.pop();
   }
+
+  //keywalue
+  persona = {
+    nombre: 'Hiram',
+    edad: 19,
+    direccion: 'Chiapas, Mexico'
+  }
+
+  //JsonPipe
+  heroes = [{
+    nombre: 'Superman',
+    vuela: true
+  },
+  {
+    nombre: 'Robin',
+    vuela: false
+  },
+  {
+    nombre: 'Aquaman',
+    vuela: false
+  }]
+
+  //Async Pipe
+  miObservable = interval(1000); // esto crea un observe que emite 1, 2, 3, 4 cada segundo
+
+  valorPromesa = new Promise((resolve,reject) =>{
+    setTimeout(()=>{
+      resolve('tenemos data de promesa')
+    },3500)
+  });
 }
