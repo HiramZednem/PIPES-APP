@@ -6,6 +6,11 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { FieldsetModule } from 'primeng/fieldset';
 import { MenubarModule } from 'primeng/menubar';
+import { PanelModule } from 'primeng/panel';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { TableModule } from 'primeng/table';
+import { ToolbarModule } from 'primeng/toolbar';
+
 
 
 @NgModule({
@@ -13,7 +18,11 @@ import { MenubarModule } from 'primeng/menubar';
     ButtonModule,
     CardModule,
     MenubarModule,
-    FieldsetModule
+    FieldsetModule,
+    PanelModule,
+    SplitButtonModule,
+    TableModule,
+    ToolbarModule
   ]
 })
 export class PrimeNgModule { }

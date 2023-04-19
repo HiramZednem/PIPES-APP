@@ -26,9 +26,9 @@ import { ToggleCasePipe } from './pipes/toggle-case.pipe';
     BasicosComponent,
     OrdenarComponent
   ],
-  imports: [
-    CommonModule,
-    PrimeNgModule
-  ]
+    imports: [
+        CommonModule,
+        PrimeNgModule,
+    ]
 })
 export class VentasModule { }
