@@ -8,6 +8,8 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 
 
@@ -18,7 +20,9 @@ import { ToggleCasePipe } from './pipes/toggle-case.pipe';
     NoComunesComponent,
     BasicosComponent,
     OrdenarComponent,
-    ToggleCasePipe
+    ToggleCasePipe,
+    CanFlyPipe,
+    SortByPipe
   ],
   exports: [
     NumerosComponent,
